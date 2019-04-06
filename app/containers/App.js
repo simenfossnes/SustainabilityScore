@@ -26,7 +26,6 @@ export default class App extends Component {
     return (
       <div className={style.normal}>
         <Header addTodo={actions.addTodo} />
-        <MainSection todos={todos} actions={actions} />
       </div>
     );
   }

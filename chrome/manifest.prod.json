@@ -2,7 +2,7 @@
   "version": "0.0.1",
   "name": "sustainability-score",
   "manifest_version": 2,
-  "description": "An innovative solution which helps you make sustainable travel decisions, while helping the travel industry to take responsibility for sustainability.",
+  "description": "Make sustainable travel decisions, while helping the travel industry take responsibility for sustainability.",
   "browser_action": {
     "default_title": "Sustainability Score",
     "default_popup": "popup.html"

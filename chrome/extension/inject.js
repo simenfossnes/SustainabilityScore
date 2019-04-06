@@ -66,7 +66,7 @@ const renderSustainabilityScore = async () => {
     // fetch sustainability score
     const CO2 = await fetchSustainabilityScore('sk1327', '2019', '04', '08', 'AES');
     console.log('co2: ', CO2);
-          
+    
     // calculate
     var calculatedSustainabilityScore = images[(Math.floor(Math.random() * (+3 - +0)) + +0)];
 
@@ -81,13 +81,9 @@ const renderSustainabilityScore = async () => {
     item.appendChild(x);
   }
 
-  // const injectDOM = document.createElement('div');
-  // injectDOM.className = 'inject-react-example';
-  // injectDOM.style.textAlign = 'center';
-  // .appendChild(injectDOM);
 
-  // appendChild
-
+  // React implementation
+  // x.appendChild(injectDOM);
   // render(<InjectApp />, injectDOM);
 }
 

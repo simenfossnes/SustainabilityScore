@@ -42,7 +42,7 @@ class InjectApp extends Component {
 
 let intervalValue;
 
-const renderSustainabilityScore = () => {
+const renderSustainabilityScore = async () => {
 
   let tripCards = document.getElementsByClassName('col-sm-2 sm-border-left-dashed price-per-traveller-container');
   
@@ -62,6 +62,10 @@ const renderSustainabilityScore = () => {
   ];
 
   for (var item of tripCards) {
+
+    // fetch sustainability score
+    const CO2 = await fetchSustainabilityScore('sk1327', '2019', '04', '08', 'AES');
+    console.log('co2: ', CO2);
           
     // calculate
     var calculatedSustainabilityScore = images[(Math.floor(Math.random() * (+3 - +0)) + +0)];
@@ -92,3 +96,8 @@ window.addEventListener('load', () => {
   intervalValue = setInterval(renderSustainabilityScore, 1000);
 });
 
+const fetchSustainabilityScore = (flight, year, month, day, airport) => {
+  return fetch(`https://travl.no/hackathon/travl-api_ny.php?flight=${flight}&y=${year}&m=${month}&d=${day}&airport=${airport}`)
+      .then((data) => data.json())
+      .then(content => content.decisions.carbon.description);
+}

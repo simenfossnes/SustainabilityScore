@@ -25,6 +25,7 @@
 
 ## Contents
 
+- [Support](#support)
 - [Tooling](#tooling)
 - [Installation](#installation)
 - [Development](#development)
@@ -46,6 +47,11 @@
 
 
 
+## Tooling
+
+Currently only one site is supported. You can check it out by clicking on the link below. This will give you an idea of how the solution is intended to work. We need more people to chip in and make it a reality, so any contribution is highly appreciated.
+
+ - Round-Trip results page of [Berg-Hansen Trip Search](https://www.berg-hansen.no/privat/vare-turer/) - just do the search, and watch the magic happen.
 
 
 ## Tooling

@@ -18,13 +18,6 @@
   "background": {
     "page": "background.html"
   },
-  "content_scripts": [
-    {
-      "matches": ["http://*.nytimes.com/*"],
-      "css": ["myStyles.css"],
-      "js": ["contentScript.js"]
-    }
-  ],
-  "permissions": [ "contextMenus", "tabs", "storage", "https://github.com/*", "https://diggit.no/*" ],
+  "permissions": [ "contextMenus", "tabs", "storage", "https://github.com/*", "https://booking.berg-hansen.no/*" ],
   "content_security_policy": "default-src 'self'; script-src 'self'; style-src * 'unsafe-inline'; img-src 'self' data:;"
 }

@@ -31,7 +31,7 @@ chrome.contextMenus.create({
   contexts: ['all'],
   documentUrlPatterns: [
     'https://github.com/*',
-    'https://www.youtube.com/*'
+    'https://diggit.no/*'
   ]
 });
 
